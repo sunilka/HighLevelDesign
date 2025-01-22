@@ -1,4 +1,4 @@
-What we wil be designing is a ticket booking system like BookMyShow.
+What we will be designing is a ticket booking system like BookMyShow.
 
 To design a high level diagram for any question, we follow the below steps:
 
@@ -27,3 +27,8 @@ Ans: We can look at this if the time permits at the end.
 
 For the next steps, look at the HLD diagram that we have come up, in the .drawio file.
 
+**Data Layer Discussion**
+
+We will be using the a combination of the relation database system, as well as a NOSQL database system.
+- To store information like the threaters, the location, movies etc.. we can use the relational database system.
+- To store information about a particular movie information, the reivews etc.. we can go for non-relational databases since the information such as these would not have any relations.
