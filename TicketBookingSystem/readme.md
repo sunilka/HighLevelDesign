@@ -32,3 +32,20 @@ For the next steps, look at the HLD diagram that we have come up, in the .drawio
 We will be using the a combination of the relation database system, as well as a NOSQL database system.
 - To store information like the threaters, the location, movies etc.. we can use the relational database system.
 - To store information about a particular movie information, the reivews etc.. we can go for non-relational databases since the information such as these would not have any relations.
+
+
+One thing that we have to highlight here is the ways of locking:
+- There are 2 ways of locking in multi threading namely:
+- Optimistic locking.
+- Pesimistic locking.
+
+1) Optimistic locking:
+- In optimistic locking, you are optimistic that there would not be a change in the resource that you accessed unless you have commited the changes.
+- In the optimistic locking, before you commit your changes you check if the resource you accessed to change is the same state as you took you.
+- If in the case where the resource would have changed, you either retry again with the new updated resource or you fail.
+- We would more often use optimistic locking in the places where we do not expect a lot of concurrent access to a resource.
+
+2) Pesimistic locking:
+- In the pesimistic locking we are more strict that only one thread can access a resource and until the thread has completed its execution no other thread would be able to access that particular resource.
+- In the pesimistic locking we would be using the a lock which would lock the resource and then finally release it when the activity on that resource is completely done.
+- We will be using the pessimistic locking in the cases where we will have more curcurrent access to the resources.
