@@ -5,7 +5,7 @@
 - In this step we discuss about the problem and we get the buy in of the requirements of the system. 
 - We also note down the functional and the non functional requirements of the system.
 - In the functional requirements we list down the what the system should be doing, what are the features that it should be having.
-- In the non functional requirements we should be listing down the non functional requirements of the system such as consistency, availability, security, montoring.
+- In the non functional requirements we should be listing down the non functional requirements of the system such as consistency, availability, security, montoring, latency.
 
 2) Back of the envelope estimation:
 - In the back of the envelope estimation, we do the estimations about the servers that we need, the cache(RAM) we need, the amount of the storage that we would need in the system.
